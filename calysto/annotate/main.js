@@ -93,9 +93,9 @@ define(["require"], function (require) {
 	    myCanvas.parentNode.addEventListener('mousedown', onMouseDownOnMyCanvas, false); 
 	    myCanvas.parentNode.addEventListener('mouseup', onMouseUpOnMyCanvas, false); 
 	    
-	    myCanvas.parentNode.addEventListener('touchstart', onTouchStartOnMyCanvas, false); 
-	    myCanvas.parentNode.addEventListener('touchmove', onTouchMoveOnMyCanvas, false); 
-	    myCanvas.parentNode.addEventListener('touchend', onTouchEndOnMyCanvas, false); 
+	    myCanvas.parentNode.addEventListener('pointerdown', onTouchStartOnMyCanvas, false); 
+	    myCanvas.parentNode.addEventListener('pointermove', onTouchMoveOnMyCanvas, false); 
+	    myCanvas.parentNode.addEventListener('pointerup', onTouchEndOnMyCanvas, false); 
 	    
 	    document.myCanvas = myCanvas;
 	}
